@@ -19,21 +19,28 @@
   .container{
     font-size: 40px;
     width: 100%;
-    background: lightgray;
+    background: gray;
     display: grid;
+    grid-template-columns: repeat(auto-fill, 120px);
+    grid-template-rows: repeat(4,120px);
+    justify-content: center;
   }
 </style>
 
-<body style="background:dimgray; color:snow">
-  Hello World!
-  <p style="color:aliceblue"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eum facere eos quaerat quae voluptates nobis aliquam asperiores dolorum mollitia voluptatibus consectetur facilis eligendi harum dolores, minus ullam architecto nostrum amet. Esse voluptates incidunt sapiente vero.   </p>
-  <h3>CSS Grid test</h3>
+<body style="background: gray";>
+    
   <div class="container">
-    <div class="d1">1</div>
+    
+    <div class="d1">Hello World!</div>
+    
     <div class="d2">2</div>
+    
     <div class="d3">3</div>
+    
     <div class="d4">4</div>
+    
     <div class="d5">5</div>
+  
   </div>
 </body>
 </html>
