@@ -10,36 +10,60 @@
 </head>
 
 <style>
-  .d1{background:lightblue;}
-  .d2{background: lightsalmon;}
-  .d3{background: paleturquoise;}
-  .d4{background: lightpink;}
-  .d5{background: palegreen;}
+  .helloWorld {
+    background: lightblue; 
+  }
+  .paleGoldenRodBox {
+    background: palegoldenrod;
+  }
+  .steelBlueBox {
+    background: steelblue;
+  }
+  .darkSeaGreenBox {
+    background: darkseagreen;
+  }
+  .lavenderBox {
+    background: lavender;
+  }
+  
+  .dropCap {
+    float: left;
+    width: 0.7em;
+    font-size: 400%;
+    line-height: 80%;
+  }
 
   .container{
-    font-size: 40px;
-    width: 100%;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    width: 90%;
     background: gray;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 120px);
-    grid-template-rows: repeat(4,120px);
-    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 145px);
+    grid-template-rows: repeat(auto-fill, minmax(145px, 145px));
   }
 </style>
 
-<body style="background: gray";>
+<body style="background: gray;">
     
   <div class="container">
     
-    <div class="d1">Hello World!</div>
+    <div class="helloWorld">Hello World!</div>
     
-    <div class="d2">2</div>
-    
-    <div class="d3">3</div>
-    
-    <div class="d4">4</div>
-    
-    <div class="d5">5</div>
+    <div class="darkSeaGreenBox"><div class="dropCap">L</div>orem ipsum, dolor sit amet consectetur adipisicing elit. Optio fuga eos voluptates?</div>
+
+    <div class="paleGoldenRodBox">Placeholder</div>
+
+    <div class="lavenderBox">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+
+    <div class="darkSeaGreenBox">ASDF</div>
+  
+    <div class="lavenderBox">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius assumenda soluta placeat.</div>
+
+    <div class="paleGoldenRodBox">Another laceholder</div>
   
   </div>
 </body>
