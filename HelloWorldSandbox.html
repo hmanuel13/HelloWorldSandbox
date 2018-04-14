@@ -11,20 +11,22 @@
 
 <style>
   .helloWorld {
-    background: lightblue; 
-  }
+    background: lightblue;
+    text-align: center;
+    }
   .paleGoldenRodBox {
     background: palegoldenrod;
-  }
+    }
   .steelBlueBox {
     background: steelblue;
   }
   .darkSeaGreenBox {
     background: darkseagreen;
-  }
+    text-align: justify;
+    }
   .lavenderBox {
     background: lavender;
-  }
+    }
   
   .dropCap {
     float: left;
@@ -34,16 +36,14 @@
   }
 
   .container{
-    font-size: 15px;
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    width: 90%;
+    font-size: 16px;
+    font-family: Courier, 'Courier New',  monospace;
+    margin: 0 auto;
     background: gray;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 145px);
-    grid-template-rows: repeat(auto-fill, minmax(145px, 145px));
+    grid-template-columns: repeat(auto-fill, 270px);
+    grid-template-rows: repeat(auto-fit, 290px);
+    grid-gap: 1px;
   }
 </style>
 
@@ -51,17 +51,17 @@
     
   <div class="container">
     
-    <div class="helloWorld">Hello World!</div>
+    <div class="helloWorld"><br/><br/><br/><br/><br/><br/><b>Hello World!</b></div>
     
-    <div class="darkSeaGreenBox"><div class="dropCap">L</div>orem ipsum, dolor sit amet consectetur adipisicing elit. Optio fuga eos voluptates?</div>
+    <div class="darkSeaGreenBox"><div class="dropCap">L</div>orem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, odio. Aliquid animi dolor saepe. Dolorem commodi eveniet, amet beatae a nemo. Nihil facilis ex maxime repellendus nam beatae neque, excepturi odio optio placeat, voluptas dolores magnam eos soluta adipisci nemo accusamus dolorum amet voluptate fuga!</div>
 
     <div class="paleGoldenRodBox">Placeholder</div>
 
     <div class="lavenderBox">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
 
+    <div class="steelBlueBox">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius assumenda soluta placeat.</div>
+
     <div class="darkSeaGreenBox">ASDF</div>
-  
-    <div class="lavenderBox">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius assumenda soluta placeat.</div>
 
     <div class="paleGoldenRodBox">Another laceholder</div>
   
