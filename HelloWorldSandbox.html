@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>HelloWorldSandbox</title>
-  <meta name="viewport" content="width=device-width">
-</head>
+  <head>
+    <title>HelloWorldSandbox</title>
+    <meta name="viewport" content="width=device-width">
 
-<style>
+  </head>
+
+  <style>
+
+  .container{
+    font-size: 12px;
+    font-family: Courier, 'Courier New',  monospace;
+    padding: 2px;
+    margin: 2px;
+    overflow: scroll;
+    background: gray;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+    grid-auto-rows: 150px;
+    grid-gap: 1px;
+    align-content: center;
+    justify-content: center;
+  }
+  .verticalCell2{
+    grid-row: span 2;
+  }
+  .horizontalCell2{
+    grid-column: span 2;
+  }
   .helloWorld {
     display: grid;
     background: lightblue;
@@ -14,49 +36,38 @@
     }
   .paleGoldenRodBox {
     background: palegoldenrod;
+    padding: 2px;
+    overflow: auto;
     }
   .steelBlueBox {
     background: steelblue;
+    padding: 2px;
+    overflow: auto;
   }
   .darkSeaGreenBox {
     background: darkseagreen;
-    text-align: justify;
+    padding: 2px;
+    overflow: auto;
     }
   .lavenderBox {
     background: lavender;
-    font-size: 14px;
-    padding: 5px;
-    }
-  .lorem {
-    background: darkseagreen;
-    font-size: 11px;
-    text-align: justify;
     padding: 2px;
-    grid-row: span 2;
-  }
-  .helloWorldToDo{
-    background: lavender;
-    font-size: 14px;
-    padding: 5px;
-    grid-row: span 2;
-  }
+    overflow: auto;
+    }
   .dropCap {
     float: left;
     width: 0.7em;
     font-size: 500%;
     line-height: 80%;
   }
+  /* Global */
 
-  .container{
+  ul {
+    padding: 10px;
+    margin: 2px;
+  }
+  body{
     font-size: 16px;
-    font-family: Courier, 'Courier New',  monospace;
-    background: gray;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
-    grid-auto-rows: 150px;
-    grid-gap: 1px;
-    align-content: center;
-    justify-content: center;
   }
 </style>
 
@@ -66,9 +77,9 @@
     
     <div class="helloWorld"><strong>Hello World!</strong></div>
     
-    <div class="lorem"><div class="dropCap">L</div>orem ipsum dolor sit amet consectetur adipisicing elit. Rem, itaque nam officiis harum fuga magni dignissimos vero, atque dolor dolores quasi aperiam nostrum nobis consequuntur, repudiandae dicta commodi minus numquam possimus deleniti quo. Non aliquam, perspiciatis odio, sapiente nemo enim eaque quibusdam excepturi repellendus esse explicabo autem expedita voluptatibus!</div>
+    <div class="darkSeaGreenBox verticalCell2"><div class="dropCap">L</div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores in ad incidunt eveniet veniam a! Aut nam ipsam fuga nostrum in veniam sequi quo illum ipsa, inventore amet, dolorem commodi repellendus adipisci quos incidunt. Ducimus et asperiores dolorum nobis eos dolores, ut consequuntur dicta aspernatur laboriosam optio tempora sed culpa? Perferendis rerum perspiciatis nostrum ea doloremque voluptate, illo atque cumque ut dicta voluptas laborum odit ratione consectetur ipsum libero consequuntur repellat soluta veniam eos quaerat?</div>
 
-    <div class="lavenderBox"><b>About Me:</b> 
+    <div class="lavenderBox"><strong>About Hello World Sandbox:</strong>
       <p><q>Every waking moment, such design and technology distract my mind.</q></p>
     </div>
 
@@ -80,12 +91,29 @@
 
     <div class="paleGoldenRodBox">Another laceholder</div>
 
-    <div class="helloWorldToDo">To Do:</div>
+    <div class="lavenderBox verticalCell2">To Do:
+      <form action="">
+        <input type="checkbox">Separate html and css files<br>
+        <input type="checkbox" checked>Fix text sizes<br>
+        <input type="checkbox" checked>Add textoverflow handling<br>
+        <input type="checkbox">Add a Change Log cell 
+      </form>
+      <p>New additions at top.</p>
+    </div>
 
     <div class="paleGoldenRodBox">Another laceholder</div>
 
     <div class="paleGoldenRodBox">Another laceholder</div>
-  
+
+    <div class="lavenderBox horizontalCell2">
+      <ul>Change Log
+        <li>Added Change Log Cell</li>
+      </ul>
+      <p>Updates are listed latest first.</p>
+    </div>
+
   </div>
+  
 </body>
+
 </html>
