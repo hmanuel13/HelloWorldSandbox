@@ -1,0 +1,62 @@
+.container{
+  font-size: 12px;
+  font-family: Courier, 'Courier New',  monospace;
+  padding: 2px;
+  margin: 2px;
+  overflow: scroll;
+  background: gray;
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  grid-auto-rows: 150px;
+  grid-gap: 1px;
+  align-content: center;
+  justify-content: center;
+}
+.verticalCell2{
+  grid-row: span 2;
+}
+.horizontalCell2{
+  grid-column: span 2;
+}
+.helloWorld {
+  display: grid;
+  background: lightblue;
+  justify-content: center;
+  align-content: center;
+  }
+.paleGoldenRodBox {
+  background: palegoldenrod;
+  padding: 2px;
+  overflow: auto;
+  }
+.steelBlueBox {
+  background: steelblue;
+  padding: 2px;
+  overflow: auto;
+}
+.darkSeaGreenBox {
+  background: darkseagreen;
+  padding: 2px;
+  overflow: auto;
+  }
+.lavenderBox {
+  background: lavender;
+  padding: 2px;
+  overflow: auto;
+  }
+.dropCap {
+  float: left;
+  width: 0.7em;
+  font-size: 500%;
+  line-height: 80%;
+}
+/* Global */
+
+ul {
+  padding: 10px;
+  margin: 2px;
+}
+body{
+  font-size: 16px;
+}
+</style>
