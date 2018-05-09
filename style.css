@@ -13,6 +13,10 @@ body{
   background: #1e1e1e;
 }
 
+img{
+  width: 150px;
+}
+
 :root{
   /* cell colors */
   --cellColor1: #e6e2af;
@@ -45,6 +49,7 @@ body{
   grid-gap: 2px;
   align-content: center;
   justify-content: center;
+  grid-auto-flow: dense;
 }
 
 .tallCell{
@@ -63,40 +68,40 @@ body{
 
 
 /* individual cell classes */
-.cell1{
+.cell01{
   background: var(--cellColor1);
   padding: var(--cellPadding);
 }
-.cell2{
+.cell02{
   background: var(--cellColor2);
   padding: var(--cellPadding);
 }
-.cell3{
+.cell03{
   /* use for graphics, too dark for texts */
   background: var(--cellColor3);
   padding: var(--cellPadding);
 }
-.cell4{
+.cell04{
   background: var(--cellColor4);
   padding: var(--cellPadding);
 }
-.cell5{
+.cell05{
   background: var(--cellColor5);
   padding: var(--cellPadding);
 }
-.cell6{
+.cell06{
   background: var(--cellColor6);
   padding: var(--cellPadding);
 }
-.cell7{
+.cell07{
   background: var(--cellColor7);
   padding: var(--cellPadding);
 }
-.cell8{
+.cell08{
   background: var(--cellColor8);
   padding: var(--cellPadding);
 }
-.cell9{
+.cell09{
   background: var(--cellColor9);
   padding: var(--cellPadding);
 }
@@ -137,7 +142,6 @@ body{
   align-items: center;
   text-align: center;
 }
-
 
 .dropCap {
   float: left;
