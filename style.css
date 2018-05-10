@@ -44,7 +44,7 @@ img{
 /* Main Container */
 .container{
   display: grid;
-  grid-template-columns: repeat(5, 150px);
+  grid-template-columns: repeat(4, 150px);
   grid-auto-rows: 150px;
   grid-gap: 2px;
   align-content: center;
@@ -148,25 +148,6 @@ img{
   width: 0.7em;
   font-size: 500%;
   line-height: 80%;
-}
-
-@media(max-width: 1200px) {
-  .container{
-   display: grid;
-   grid-template-columns: repeat(4, 150px);
-  }
-  .tallCell{
-    grid-row: span 2;
-  }
-
-  .wideCell{
-    grid-column: span 2;
-  }
-
-  .bigCell{
-    grid-row: span 2;
-    grid-column: span 2;
-  }
 }
 
 @media(max-width: 800px) {
